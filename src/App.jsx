@@ -6,7 +6,7 @@ import Footer from "./Footer"
 import styles from "./css/App.module.css"
 
 function App() {
-  const [task, setTask] = useState({name:"", done:false});
+  const [task, setTask] = useState({name:"", done:false, date:""});
   const [taskList, setTaskList] = useState([]);
   const [edit, setEdit] = useState(null);
   return (
