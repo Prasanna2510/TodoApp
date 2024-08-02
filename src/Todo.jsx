@@ -23,6 +23,7 @@ export default function Todo({todo, task, taskList, setTask, setTaskList,setEdit
             <span className={style} onClick={handleStrike}>{todo.name}</span>
             <button className={styles.delete} onClick={handleDelete}>delete</button>
             <button className={styles.delete} onClick={handleEdit}>edit</button>
+            <div className={styles.date}>last updated: {todo.date}</div>
         </div>
     )
 }
