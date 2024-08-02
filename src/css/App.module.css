@@ -1,0 +1,14 @@
+.body{
+    margin: .5rem auto;
+    width: 35rem;
+    font-family: Polysans, sans-serif;
+    box-shadow: 0 0 5px 3px rgba(95, 95, 95, 0.847);
+    border-radius: 1rem;
+    padding-bottom: .5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .body{
+        width: 23rem;
+    }
+}
