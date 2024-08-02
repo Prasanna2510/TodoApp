@@ -1,11 +1,13 @@
 import styles from "./css/Search.module.css"
 
 export default function Search({task, setTask, setTaskList, taskList, edit, setEdit}){
+    let date = new Date();
+    date = date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear();
     function handleInput(e){
         if(edit!=null){
-            setTask({name: e.target.value, done: edit.done});
+            setTask({name: e.target.value, done: edit.done, date:date});
         } else{
-            setTask({name: e.target.value, done: false});
+            setTask({name: e.target.value, done: false, date:date});
         }
     }
     function handleSubmit(e){
@@ -22,7 +24,7 @@ export default function Search({task, setTask, setTaskList, taskList, edit, setE
             const sorted = [...taskList, task];
             setTaskList(sorted.sort((a,b)=>a.done-b.done));
         }
-        setTask({name: "", done: false});
+        setTask({name: "", done: false, date:""});
     }
     return (
         <div className={styles.contain}>
