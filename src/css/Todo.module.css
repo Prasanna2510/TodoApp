@@ -2,13 +2,13 @@
     border-radius: .5rem;
     margin: 1rem;
     box-shadow: inset 0 0 5px 2px rgb(149, 149, 149); 
-    padding: 0 .75rem;
+    padding: .5rem .75rem;
 }
 .todo1{
     font-weight: 500;
     color: rgba(45, 45, 45, 0.94);
     font-size: 1.5rem;
-    padding: 1.25rem 0;
+    padding: .75rem 0;
     display: inline-block;
     max-width: 60%;
     overflow: auto;
@@ -18,7 +18,7 @@
   font-weight: 500;
     color: rgba(45, 45, 45, 0.94);
     font-size: 1.5rem;
-    padding: 1.25rem 0;
+    padding: .75rem 0;
     display: inline-block;
     max-width: 60%;
     overflow: auto;
@@ -26,7 +26,7 @@
     cursor: pointer;
 }
 .delete{
-    margin: 14px .25rem;
+    margin: 10px .25rem;
     float: right;
     font-weight: 500;
     background-color: rgb(32, 32, 32);
@@ -35,6 +35,12 @@
     font-size: 1.25rem;
     padding: .5rem;
     cursor: pointer;
+}
+.date{
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 5px;
+  font-weight: 100;
 }
 ::-webkit-scrollbar {
   width: 5px;
